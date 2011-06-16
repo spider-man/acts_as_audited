@@ -22,8 +22,8 @@ class Audit < ActiveRecord::Base
   self.audited_class_names = Set.new
 
   # Order by ver
-  default_scope order(:version)
-  scope :descending, reorder("version DESC")
+#  default_scope order(:version)
+#  scope :descending, reorder("version DESC")
 
   class << self
 
